@@ -4,13 +4,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Chapeau.UI.Model;
 
 namespace Chapeau.UI
 {
     public static class LoadingUtil
     {
-        public static void LoadDataFromSource()
+        public static bool LoadDataFromSource()
         {
             List<ClubModel> Clubs = new List<ClubModel>();
             List<MatchModel> Matches = new List<MatchModel>();
@@ -59,6 +60,10 @@ namespace Chapeau.UI
 
             Singleton.Instance.Clubs = Clubs;
             Singleton.Instance.Matches = Matches;
+
+            //MessageBox.Show("Import effectué avec succès." + Environment.NewLine + string.Format("Clubs : {0}, Matches {1}", Singleton.Instance.Clubs.Count, Singleton.Instance.Matches.Count), "Information");
+
+            return true;
         }
     }
 }

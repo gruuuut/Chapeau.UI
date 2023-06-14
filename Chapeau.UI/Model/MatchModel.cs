@@ -11,5 +11,9 @@
         public int NbButAllerExterieur { get; set; }
 
         public string Competition { get; set; }
+
+        public int NbButAllerDomicileProno { get; set; }
+
+        public int NbButAllerExterieurProno { get; set; }
     }
 }

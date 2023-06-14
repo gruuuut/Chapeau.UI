@@ -60,9 +60,11 @@
     <Compile Include="Model\Classement.cs" />
     <Compile Include="Model\ClubModel.cs" />
     <Compile Include="Model\MatchModel.cs" />
+    <Compile Include="Model\ScoreModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Singleton.cs" />
+    <Compile Include="TirageUtil.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
